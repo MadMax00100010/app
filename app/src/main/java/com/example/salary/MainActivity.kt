@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
 
             else -> {
                 bindingClass.textView3.visibility = View.VISIBLE
-                bindingClass.textView3.text = "ИДИ РАБОТАЙ!!!"
+                bindingClass.textView3.text = "изменённый текст!!!"
                 bindingClass.imageView.setImageResource(R.drawable.no_money)
             }
         }
