@@ -77,27 +77,14 @@ class MainActivity : AppCompatActivity() {
                     bindingClass.imageView.setImageResource(R.drawable.no_money)
                 }
             }
-
+ // я завершил проект
             else -> {
                 bindingClass.textView3.visibility = View.VISIBLE
-                bindingClass.textView3.text = "изменённый текст!!!"
+                bindingClass.textView3.text = "Иди работай!!!"
                 bindingClass.imageView.setImageResource(R.drawable.no_money)
             }
 
-// я довел функцию до финального этапа и по максимуму  оптимизировал
 
-            Constance.DIRECTOR -> {
-                bindingClass.textView3.visibility = View.VISIBLE
-                val tempText = "${Constance.DIRECTOR_SALARY}"
-                if(bindingClass.edTT.text.toString() == Constance.DIRECTOR_PASSWORD) {
-
-                    bindingClass.textView3.text = tempText
-                    bindingClass.imageView.setImageResource(R.drawable.marmok)
-
-                } else{
-                    bindingClass.textView3.text = "Неверный пароль"
-                    bindingClass.imageView.setImageResource(R.drawable.no_money)
-                }
             }
 
 
@@ -106,4 +93,3 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
-}
