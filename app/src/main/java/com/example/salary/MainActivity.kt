@@ -83,8 +83,27 @@ class MainActivity : AppCompatActivity() {
                 bindingClass.textView3.text = "изменённый текст!!!"
                 bindingClass.imageView.setImageResource(R.drawable.no_money)
             }
+
+
+
+            Constance.DIRECTOR -> {
+                bindingClass.textView3.visibility = View.VISIBLE
+                val tempText = "${Constance.DIRECTOR_SALARY}"
+                if(bindingClass.edTT.text.toString() == Constance.DIRECTOR_PASSWORD) {
+
+                    bindingClass.textView3.text = tempText
+                    bindingClass.imageView.setImageResource(R.drawable.marmok)
+
+                } else{
+                    bindingClass.textView3.text = "Неверный пароль"
+                    bindingClass.imageView.setImageResource(R.drawable.no_money)
+                }
+            }
+
+
+
         }
-            //добавил комм
+
         }
     }
 }
