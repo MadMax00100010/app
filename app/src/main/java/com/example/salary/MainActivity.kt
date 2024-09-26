@@ -84,6 +84,7 @@ class MainActivity : AppCompatActivity() {
                 bindingClass.imageView.setImageResource(R.drawable.no_money)
             }
         }
+            //добавил комм
         }
     }
 }
