@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
                 bindingClass.imageView.setImageResource(R.drawable.no_money)
             }
 
-
+// я довел функцию до финального этапа и по максимуму  оптимизировал
 
             Constance.DIRECTOR -> {
                 bindingClass.textView3.visibility = View.VISIBLE
